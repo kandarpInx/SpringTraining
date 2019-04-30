@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+D:\Workspace\SpringTraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2787118225.index
+\B2B\src
+D:\Workspace\SpringTraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\106392530.index
+\B2B\src
+D:\Workspace\SpringTraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\696742620.index
+\B2B\src

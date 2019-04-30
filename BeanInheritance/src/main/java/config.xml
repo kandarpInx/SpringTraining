@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.example.demo.Employee" abstract="true">
+		<property name="id" value="101" />
+		<property name="name" value="Kandarp" />
+		<property name="city" value="Junagadh" />
+	</bean>
+	
+	<bean id="empDetails" class="com.example.demo.Employee" parent="emp">
+		<property name="name" value="Hardik" />
+	</bean>
+
+</beans>

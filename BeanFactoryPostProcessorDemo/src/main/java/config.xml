@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	
+	<!-- <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="cardetails.properties" />
+	</bean> -->
+	
+	<context:property-placeholder location="cardetails.properties" />
+	
+	<!-- <bean class="com.example.demo.MyBeanFactoryPostProcessor" /> -->
+
+	<bean id="bean1" class="com.example.demo.Cars" autowire="byName" />
+	
+	<bean id="swift" class="com.example.demo.CarDetails">
+		<property name="name" value="${car1.name}" />
+		<property name="type" value="${car1.type}" />
+		<property name="capacity" value="${car1.capacity}" />
+	</bean>
+	
+	<bean id="innova" class="com.example.demo.CarDetails">
+		<property name="name" value="Innova" />
+		<property name="type" value="SUV" />
+		<property name="capacity" value="7" />
+	</bean>
+
+</beans>

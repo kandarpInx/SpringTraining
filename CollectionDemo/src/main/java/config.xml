@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<!-- ******************************* Parent Child using Abstract and Merge attribute ************************************** -->
+
+	<bean id="parent" abstract="true" class="com.example.demo.CollectionsPojo">
+		<property name="stateList">
+			<list>
+				<value>Jharkhand</value>
+				<value>UP</value>
+				<value>MP</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="child" parent="parent">
+		<property name="stateList">
+			<list merge="true">
+				<value>MP</value>
+				<value>Gujarat</value>
+			</list>
+		</property>
+	</bean>
+	
+<!-- ***************************************** Collection basic example ********************************************************* -->
+
+	<!-- <bean id="collection" class="com.example.demo.CollectionsPojo">
+
+		<property name="stateProp">
+			<props>
+				<prop key="One">Gujarat</prop>
+				<prop key="Two">Rajasthan</prop>
+				<prop key="Three">Maharashtra</prop>
+			</props>
+		</property>
+		<property name="stateList">
+			<list>
+				<value>Jharkhand</value>
+				<value>UP</value>
+				<value>MP</value>
+			</list>
+		</property>
+		<property name="stateSet">
+			<set>
+				<value>Bihar</value>
+				<value>Uk</value>
+				<value>TN</value>
+			</set>
+		</property>
+		<property name="stateMap">
+			<map>
+				<entry key="1" value="ABC" />
+				<entry key="2" value="DEF" />
+				<entry key="3" value="HIJ" />
+			</map>
+		</property>
+	
+	</bean> -->
+
+
+</beans>

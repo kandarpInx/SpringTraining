@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	
+	<!-- **************************************** Using p-namespace *************************************************** -->
+
+	<!-- <bean id="fruit" class="com.example.demo.Fruit"
+	 p:fd1-ref="fruitDetails1" />
+
+	<bean id="fruitDetails1" class="com.example.demo.FruitDetails" 
+	p:name="Apple" 
+	p:color="red" 
+	p:weight="100" />
+
+
+	<bean id="fruit1" class="com.example.demo.Fruit"
+	 p:fd1-ref="fruitDetails2" />
+
+	<bean id="fruitDetails2" class="com.example.demo.FruitDetails" 
+	p:name="Orange" 
+	p:color="red" 
+	p:weight="200" /> -->
+	
+	<!-- **************************************** Using Inner Bean *************************************************** -->
+
+
+	<bean id="fruit" class="com.example.demo.Fruit">
+		<property name="fd1">
+			<bean id="fruitDetails1" class="com.example.demo.FruitDetails">
+				<property name="name" value="Apple" />
+				<property name="color" value="red" />
+				<property name="weight" value="100" />
+			</bean>
+		</property>
+	</bean>
+	
+	<!-- **************************************** Using Ref attribute *************************************************** -->
+	
+	<!-- <bean id="fruit" class="com.example.demo.Fruit">
+		<property name="fd1" ref="fruitDetails1" />
+	</bean>
+
+	<bean id="fruitDetails1" class="com.example.demo.FruitDetails">
+		<property name="name" value="Apple" />
+		<property name="color" value="red" />
+		<property name="weight" value="100" />
+	</bean> -->
+	
+	<!-- **************************************** Using idref attribute *************************************************** -->
+	
+	<!-- <bean id="fruit" class="com.example.demo.Fruit">
+		<property name="fd1" ref="fruitDetails1" />
+	</bean>
+	
+	<bean id="name" class="com.example.demo.FruitDetails">
+		<property name="name" value="Apple" />
+	</bean>
+	
+	<bean id="fruitDetails1" class="com.example.demo.FruitDetails">
+		<property name="name">
+			<idref bean="name"/>
+		</property>
+		<property name="color" value="red" />
+		<property name="weight" value="100" />
+	</bean>
+	 -->
+	
+</beans>

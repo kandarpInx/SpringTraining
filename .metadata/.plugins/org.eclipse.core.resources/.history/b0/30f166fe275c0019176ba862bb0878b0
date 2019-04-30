@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("please enter number :: ");
+		
+		NumberClass nc = new NumberClass();
+		nc.setNumber(sc.nextInt());;
+		
+		
+		
+		sc.close();
+	}
+}

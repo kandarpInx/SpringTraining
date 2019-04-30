@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        
+<hibernate-configuration>
+	<session-factory>
+		<!-- Connection Related Properties  -->		
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/b2b_database</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password"></property>
+		
+		<!-- Hibernate Properties  -->
+		<property name="hbm2ddl.auto">validate</property>
+		
+		<property name="show_sql">false</property>
+		<property name="format_sql">false</property>
+		
+		<!-- Mapping Class -->
+		<mapping class="com.model.AdminLogin" />
+		<mapping class="com.model.CategoryMaster" />
+		<mapping class="com.model.CompanyBuyOffer" />
+		<mapping class="com.model.CompanyContact" />
+		<mapping class="com.model.CompanyHomePageSlider" />
+		<mapping class="com.model.CompanyInboxOutbox" />
+		<mapping class="com.model.CompanyMemberType" />
+		<mapping class="com.model.CompanyPost" />
+		<mapping class="com.model.CompanyProfile" />
+		<mapping class="com.model.CompanyRegistration" />
+		<mapping class="com.model.CompanySellOffer" />
+		<mapping class="com.model.Product" />
+		<mapping class="com.model.ProductPhotos" />
+		<mapping class="com.model.SubCategory" />
+				
+	</session-factory>
+</hibernate-configuration>        

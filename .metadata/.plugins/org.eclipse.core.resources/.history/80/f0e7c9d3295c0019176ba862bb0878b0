@@ -1,0 +1,26 @@
+package com.example.demo;
+
+public class NumberClass {
+	
+	private int number;
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+	
+	public void logic() {
+		if(number>0 && number<1000000000) {
+			System.out.println("Number is :: "+convert(number)+ "Only");
+		}
+		else if(number==0) {
+			System.out.println("Number is Zero");
+		}
+		else {
+			System.out.println("Invalid Number");
+		}
+	}
+}

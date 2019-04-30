@@ -1,0 +1,39 @@
+
+
+.form-control.error {
+    border-color: red;
+}
+
+.form-control.mismatch {
+    border-color: orange;
+}
+
+.form-control.valid {
+    border-color: green;
+}
+
+.form label.error {
+    color: red;
+}
+
+.form label.mismatch {
+    border-color: orange;
+}
+
+.form label.valid {
+    color: green;
+}
+* {
+  .border-radius(0) !important;
+}
+
+#field {
+    margin-bottom:20px;
+}
+.form-control{
+	margin-right: 313px;
+}
+#errmsg
+{
+color: red;
+}

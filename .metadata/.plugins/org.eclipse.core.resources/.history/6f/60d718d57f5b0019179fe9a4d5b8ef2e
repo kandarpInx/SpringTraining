@@ -1,0 +1,12 @@
+package com.example.demo;
+
+import org.springframework.context.ApplicationEvent;
+
+public class StartEventHandler extends ApplicationEvent {
+
+	public StartEventHandler(Object source) {
+		super(source);
+		System.out.println("We are in start event handler..");
+	}
+
+}

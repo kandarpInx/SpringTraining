@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MultiplePojoDemoApplication {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("MainBean.xml");
+		
+		Fruit fruit = (Fruit) context.getBean("fruit");
+		Fruit fruit1 = (Fruit) context.getBean("fruit1");
+		
+		fruit.displayDetails();
+		fruit1.displayDetails();
+		
+	}
+
+}

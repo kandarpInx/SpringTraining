@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="AnnotationAutoScan"/>
+<aop-project name="BeanPostProcessorDemo"/>
+<aop-project name="PracticeOfMultipleBeanWithSameName"/>
+<aop-project name="Demo"/>
+<aop-project name="EventHandling"/>
+<aop-project name="DIConstructor"/>
+<aop-project name="MultipleConfigFile"/>
+<aop-project name="MethodInjection"/>
+<aop-project name="AutoWireDemo"/>
+<aop-project name="FactoryMethodDemo"/>
+<aop-project name="LifeCycleDemo"/>
+<aop-project name="MessageResource"/>
+<aop-project name="AnnotationAutowireOnSetter"/>
+<aop-project name="AnnotationImportSimple"/>
+<aop-project name="AnnotationCustom"/>
+<aop-project name="AnnotationConfiguration"/>
+<aop-project name="LifeCycleDemo-2"/>
+<aop-project name="MultiplePojoDemo"/>
+<aop-project name="DependsOnProperty"/>
+<aop-project name="BeanFactoryPostProcessorDemo"/>
+<aop-project name="FirstSpringDemo"/>
+<aop-project name="BeanInheritance"/>
+<aop-project name="CollectionDemo"/>
+<aop-project name="FactoryMethodDemo1"/>
+<aop-project name="LifeCycleDemo-3"/>
+<aop-project name="AnnotationService"/>
+<aop-project name="AnnotationFilter"/>
+<aop-project name="InterfaceImplementation"/>
+<aop-project name="FactoryBeanDemo"/>
+<aop-project name="AnnotationJSR250"/>
+<aop-project name="ConstructorDemo"/>
+<aop-project name="CustomBeanScope-1"/>
+<aop-project name="AnnotationRequired"/>
+<aop-project name="DISetter"/>
+<aop-project name="CircularDependency"/>
+</aop-reference-model>

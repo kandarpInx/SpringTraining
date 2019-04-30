@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bean" class="com.example.demo.BeanMain"
+		factory-method="createService">
+	</bean>
+	
+	<bean id="user" factory-bean="bean" factory-method="createUserService">
+	</bean>
+	
+	<bean id="admin" factory-bean="bean" factory-method="createAdminService">
+	</bean>
+</beans>
